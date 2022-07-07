@@ -109,9 +109,12 @@ class MainActivity : AppCompatActivity() {
 
         dialog.setContentView(R.layout.activity_resultado)
 
-        var resultado: TextView = dialog.findViewById(R.id.resultado)
+        val resultado: TextView = dialog.findViewById(R.id.resultado)
 
-        var sair: ImageView = dialog.findViewById(R.id.sair)
+        val sair: ImageView = dialog.findViewById(R.id.sair)
+
+        val categoria: TextView = dialog.findViewById(R.id.imcCcategoria)
+
 
         sair.setOnClickListener {
             dialog.dismiss()
@@ -119,12 +122,37 @@ class MainActivity : AppCompatActivity() {
 
         resultado.text = String.format("%.1f", calcularIMC())
         dialog.show()
+
+        if(calcularIMC()<16){
+            categoria.text = String.format("Muito abaixo do peso")
+
+        }else if (calcularIMC()<16.9 && calcularIMC()>16){
+            categoria.text = String.format("Muito abaixo do peso")
+
+
+        }else if (calcularIMC()<18.4 && calcularIMC()>16.9){
+            categoria.text = String.format("Abaixo do peso")
+
+        } else if (calcularIMC()<24.9 && calcularIMC()>18.4){
+            categoria.text = String.format("Normal")
+
+        }else if (calcularIMC()<29.9 && calcularIMC()>24.9){
+            categoria.text = String.format("Sobre peso")
+
+        }else if (calcularIMC()<34.9 && calcularIMC()>29.9){
+            categoria.text = String.format("Obesidade grau I")
+
+        }else if (calcularIMC()<39.9 && calcularIMC()>34.9){
+            categoria.text = String.format("Obesidade grau II")
+
+        }else{
+            categoria.text = String.format("Obesidade grau III")
+        }
     }
 
 
-    private fun calcularIMC() : Double {
+    private fun calcularIMC(): Double {
         val imc = (peso/(altura*altura).toDouble())*10000
-
         return imc
     }
 }
