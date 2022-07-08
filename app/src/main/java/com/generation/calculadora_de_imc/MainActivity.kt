@@ -123,11 +123,11 @@ class MainActivity : AppCompatActivity() {
         resultado.text = String.format("%.1f", calcularIMC())
         dialog.show()
 
-        if(calcularIMC()<16){
-            categoria.text = String.format("Muito abaixo do peso")
+         if(calcularIMC()<16){
+            categoria.text = String.format("Peso muito baixo")
 
         }else if (calcularIMC()<16.9 && calcularIMC()>16){
-            categoria.text = String.format("Muito abaixo do peso")
+            categoria.text = String.format("Peso muito baixo")
 
 
         }else if (calcularIMC()<18.4 && calcularIMC()>16.9){
@@ -149,6 +149,8 @@ class MainActivity : AppCompatActivity() {
             categoria.text = String.format("Obesidade grau III")
         }
     }
+
+
 
 
     private fun calcularIMC(): Double {

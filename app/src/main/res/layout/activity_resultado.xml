@@ -105,7 +105,7 @@
                     android:layout_width="140dp"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
-                    android:text="@string/peso_muito_baixo"
+                    android:text="@string/peso_muito_baixo_"
                     android:textColor="@color/white"
                     android:textSize="12sp" />
 
