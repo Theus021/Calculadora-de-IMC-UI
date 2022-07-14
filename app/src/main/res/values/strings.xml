@@ -45,4 +45,6 @@
     <string name="orangeball">orangeBall</string>
     <string name="redball">redBall</string>
     <string name="peso_muito_baixo_">Peso muito baixo</string>
+    <string name="mulher">Mulher</string>
+    <string name="homem">homem</string>
 </resources>

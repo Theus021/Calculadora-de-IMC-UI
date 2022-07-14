@@ -33,19 +33,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getUserGenero() {
-        binding.Homem.setOnClickListener {
-            binding.Mulher.setBackgroundResource(R.drawable.cardbackground)
-            binding.Homem.setBackgroundResource(R.drawable.cardbackground_clicked)
-            genero = "Homem"
 
         }
 
-        binding.Mulher.setOnClickListener {
-            binding.Mulher.setBackgroundResource(R.drawable.cardbackground_clicked)
-            binding.Homem.setBackgroundResource(R.drawable.cardbackground)
-            genero = "Mulher"
-        }
-    }
 
     private fun getUserAltura() {
          binding.sneekBarAltura.setOnSeekBarChangeListener(object: SeekBar.OnSeekBarChangeListener{
@@ -91,6 +81,8 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
+
+
 
     private fun onBtnClicked(){
 

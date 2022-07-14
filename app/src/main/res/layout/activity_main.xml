@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -96,74 +97,6 @@
         android:textColor="@color/white"
         android:textSize="15sp"
         android:textStyle="bold" />
-
-    <RelativeLayout
-        android:id="@+id/Homem"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_above="@id/alturaCase"
-        android:layout_alignEnd="@+id/centerVerticalLine"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="35dp"
-        android:background="@drawable/generonotfocus">
-
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_above="@+id/textHomem"
-            android:layout_centerInParent="true"
-            android:layout_marginBottom="20dp"
-            android:src="@drawable/male" />
-
-        <TextView
-            android:id="@+id/textHomem"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="10dp"
-            android:text="@string/masculino"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/Mulher"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_above="@id/alturaCase"
-        android:layout_alignStart="@+id/centerVerticalLine"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="35dp"
-        android:background="@drawable/generonotfocus">
-
-        <ImageView
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_above="@+id/textMulher"
-            android:layout_centerInParent="true"
-            android:layout_marginBottom="20dp"
-            android:src="@drawable/female" />
-
-        <TextView
-            android:id="@+id/textMulher"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="10dp"
-            android:text="@string/feminino"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-
-    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/idade"
@@ -311,4 +244,26 @@
 
     </RelativeLayout>
 
-    </RelativeLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/alturaCase"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/homem"
+        android:background="@drawable/card_homem" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/alturaCase"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/ic_mulher"
+        android:backgroundTint="@color/white"
+        android:text="@string/mulher" />
+
+</RelativeLayout>
