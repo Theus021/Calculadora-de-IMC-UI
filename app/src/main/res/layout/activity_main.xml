@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,29 +8,17 @@
     android:background="#1e1d1d"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:id="@+id/centerHorizontalLine"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true" />
-
-
-    <RelativeLayout
-        android:id="@+id/centerVerticalLine"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_centerHorizontal="true" />
 
     <RelativeLayout
         android:id="@+id/alturaCase"
         android:layout_width="340dp"
         android:layout_height="150dp"
-        android:layout_above="@id/centerHorizontalLine"
         android:layout_centerHorizontal="true"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginBottom="-50dp"
-        android:background="@drawable/cardbackground">
+        android:layout_marginTop="265dp"
+        android:background="@drawable/cardbackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:layout_width="match_parent"
@@ -43,28 +32,17 @@
 
         </TextView>
 
-        <TextView
-            android:id="@+id/Tamanho"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerInParent="true"
-            android:layout_marginBottom="50dp"
-            android:text="000"
-            android:textColor="@color/white"
-            android:textSize="40sp"
-            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_marginStart="10dp"
-            android:layout_toEndOf="@id/Tamanho"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="70dp"
+            android:layout_toEndOf="@+id/Tamanho"
+            android:gravity="center"
             android:text="@string/cm"
             android:textColor="@color/white"
             android:textSize="20sp" />
-
 
         <SeekBar
             android:id="@+id/sneekBarAltura"
@@ -81,6 +59,19 @@
 
         </SeekBar>
 
+        <TextView
+            android:id="@+id/Tamanho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="40dp"
+            android:backgroundTint="#2C2C2C"
+            android:text="000"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
 
     </RelativeLayout>
 
@@ -89,26 +80,27 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="35dp"
         android:background="@drawable/buttonbackground"
         android:text="@string/calcular_imc"
         android:textColor="@color/white"
         android:textSize="15sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <RelativeLayout
         android:id="@+id/idade"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_below="@id/alturaCase"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="85dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
-        android:layout_toStartOf="@id/centerVerticalLine"
-        android:background="@drawable/cardbackground">
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/cardbackground"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCalcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alturaCase">
 
         <TextView
             android:id="@+id/textpeso"
@@ -176,12 +168,13 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_below="@id/alturaCase"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="85dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
-        android:layout_toEndOf="@id/centerVerticalLine"
-        android:background="@drawable/cardbackground">
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/cardbackground"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCalcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alturaCase">
 
         <TextView
             android:id="@+id/textIdade"
@@ -244,26 +237,24 @@
 
     </RelativeLayout>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/alturaCase"
+    <RelativeLayout
+        android:id="@+id/buttonMulher"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
         android:layout_marginStart="25dp"
-        android:layout_marginBottom="40dp"
-        android:text="@string/homem"
-        android:background="@drawable/card_homem" />
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/ic_mulher_"
+        app:layout_constraintBottom_toTopOf="@+id/alturaCase"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/alturaCase"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="25dp"
-        android:layout_marginBottom="50dp"
-        android:background="@drawable/ic_mulher"
-        android:backgroundTint="@color/white"
-        android:text="@string/mulher" />
+    <RelativeLayout
+        android:id="@+id/buttonHomem"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/ic_homem_"
+        app:layout_constraintBottom_toTopOf="@+id/alturaCase"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

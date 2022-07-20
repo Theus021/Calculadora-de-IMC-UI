@@ -17,12 +17,28 @@
         <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/drawable/ball_solid.xml" value="0.1595" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/drawable/ball_yellow.xml" value="0.11" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/drawable/balll_blue.xml" value="0.1595" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/drawable/card_homem.xml" value="0.156" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/drawable/card_homem_selected.xml" value="0.156" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/drawable/card_mulher_selected.xml" value="0.156" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/drawable/cardbackground.xml" value="0.1835" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/drawable/cardbackground_clicked.xml" value="0.1835" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/drawable/generobackground.xml" value="0.1" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/drawable/generofocus.xml" value="0.1" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/drawable/generonotfocus.xml" value="0.1825" />
-        <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/drawable/ic_card_homem.xml" value="0.156" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/drawable/ic_card_homem_clicked.xml" value="0.156" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/drawable/ic_card_homem_cliecked.xml" value="0.156" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/drawable/ic_card_homem_cliecked2.xml" value="0.156" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/drawable/ic_component_4__7_.xml" value="0.156" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/drawable/ic_homem.xml" value="0.156" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/drawable/ic_homem_.xml" value="0.173" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/drawable/ic_homem_clicked.xml" value="0.173" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/drawable/ic_mulher.xml" value="0.156" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/drawable/ic_mulher_.xml" value="0.173" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/drawable/ic_mulher_clicked.xml" value="0.173" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/drawable/ic_vector_40.xml" value="0.156" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/drawable/ic_voltar.xml" value="0.156" />
+        <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/layout/activity_resultado.xml" value="0.5089887640449439" />
         <entry key="..\:/Users/usuario/AndroidStudioProjects/calculadora_De_Imc/app/src/main/res/layout/layout_resultado.xml" value="0.18" />
       </map>
