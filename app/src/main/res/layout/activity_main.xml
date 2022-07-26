@@ -14,8 +14,8 @@
         android:layout_width="340dp"
         android:layout_height="150dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="265dp"
         android:background="@drawable/cardbackground"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCalcular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -239,9 +239,9 @@
 
     <RelativeLayout
         android:id="@+id/buttonMulher"
-        android:layout_width="200dp"
+        android:layout_width="195dp"
         android:layout_height="150dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="36dp"
         android:layout_marginBottom="60dp"
         android:background="@drawable/ic_mulher_"
         app:layout_constraintBottom_toTopOf="@+id/alturaCase"
@@ -249,9 +249,9 @@
 
     <RelativeLayout
         android:id="@+id/buttonHomem"
-        android:layout_width="200dp"
+        android:layout_width="195dp"
         android:layout_height="150dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginEnd="35dp"
         android:layout_marginBottom="60dp"
         android:background="@drawable/ic_homem_"
         app:layout_constraintBottom_toTopOf="@+id/alturaCase"
